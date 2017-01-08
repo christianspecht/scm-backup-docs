@@ -25,6 +25,10 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+.. meta::
+    :google-site-verification: xINH0T8eqZ6O0ATn_IZY3DiPhcXK_c_RaVeLUSqPYro
+    :yandex-verification: 77dc911a2b7fc8d3
 
 
 
