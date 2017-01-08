@@ -47,8 +47,10 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'SCM Backup'
-copyright = '2016, Christian Specht'
 author = 'Christian Specht'
+import datetime
+copyright = '2016-{}, {}'.format(datetime.datetime.now().year, author)
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
