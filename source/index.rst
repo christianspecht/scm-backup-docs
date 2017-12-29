@@ -14,7 +14,7 @@ It will support backing up from multiple source code hosters *(starting with Git
 
 - `Source code <https://github.com/christianspecht/scm-backup/>`_
 - `Website <http://scm-backup.org/>`_
-- `Download latest build <https://ci.appveyor.com/project/ChristianSpecht/scm-backup/build/artifacts>`_
+- `Download latest release <http://scm-backup.org/downloads/>`_
 
 It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's supposed to run on Windows, Linux and MacOS.
 
