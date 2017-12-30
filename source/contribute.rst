@@ -1,11 +1,10 @@
-Contribute
-==========
+How to Contribute
+=================
 
-Running the tests
------------------
+.. toctree::
+   :maxdepth: 2
+   
+   contribute-app
+   contribute-docs
 
-Making a new release
---------------------
 
-Writing documentation
----------------------
