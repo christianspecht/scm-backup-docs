@@ -6,5 +6,4 @@ How to Contribute
    
    contribute-app
    contribute-docs
-
-
+   contribute-release
