@@ -34,6 +34,10 @@ The CI build will recognize this and automatically use this version number to cr
 3. Release the docs
 -------------------
 
-Create the same Git tag with the same version number in the documentation repository as well.
+- Set the `version number <http://www.sphinx-doc.org/en/stable/config.html#confval-version>`_ in the `Sphinx configuration file <https://github.com/christianspecht/scm-backup-docs/blob/master/source/conf.py>`_ ``conf.py`` to the new version number, but in short ``X.Y`` format.
 
-This will create a version of the documentation for this release, making use of `Read the Docs' versioning capabilities <http://docs.readthedocs.io/en/latest/versions.html>`_.
+    Apparently Read the Docs uses this number at least in the automatically created PDF.
+
+- Create the same Git tag with the same version number in the documentation repository as well.
+
+    This will create a version of the documentation for this release, making use of `Read the Docs' versioning capabilities <http://docs.readthedocs.io/en/latest/versions.html>`_.
