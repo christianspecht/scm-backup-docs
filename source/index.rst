@@ -18,7 +18,7 @@ It will support backing up from multiple source code hosters *(starting with Git
 
 It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's supposed to run on Windows, Linux and MacOS.
 
-.. note:: SCM Backup is not finished yet. Proper documentation will come with version 1.0!
+.. note:: SCM Backup 1.0 was just released, but the initial documentation is not yet finished. Please check again in a few days!
 
 
 
