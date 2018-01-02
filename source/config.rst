@@ -30,6 +30,8 @@ Example::
     waitSecondsOnError: 5
 
 
+.. _config-sources:
+
 Sources
 -------
 
