@@ -21,6 +21,13 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
 .. note:: SCM Backup 1.0 was just released, but the initial documentation is not yet finished. Please check again in a few days!
 
 
+How does it work?
+-----------------
+
+SCM Backup uses the respective hoster's API to get a list of all your repositories hosted there.
+
+Then, it uses the respective SCM (e.g. `Git <https://git-scm.com/>`_ and/or `Mercurial <https://www.mercurial-scm.org/>`_, which need to be installed on your machine if you have at least one repository of the given type) to clone every repository into your local backup folder - or just pull the newest changes, if it already **is** in your local backup folder.
+
 
 .. toctree::
    :maxdepth: 2
