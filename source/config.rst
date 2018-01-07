@@ -30,6 +30,22 @@ Example::
     waitSecondsOnError: 5
 
 
+.. _config-scms:
+
+scms
+++++
+
+SCM Backup uses the source control software already installed on your system. By default, it assumes that the required SCMs are installed in your path.
+
+If this isn't the case, or if you have multiple versions of the same SCM on your system and want SCM Backup to use a specific one, you can specify the complete path to the executable in the config file.
+
+Example::
+
+    scms:
+      - name: git
+        path: "c:\\git\\git.exe"
+
+    
 .. _config-sources:
 
 Sources
