@@ -16,7 +16,7 @@ The new version number **must** be in "three-digit" ``MAJOR.MINOR.PATCH`` format
 
 Each push to ``master`` creates a new CI build on `AppVeyor <https://ci.appveyor.com/project/ChristianSpecht/scm-backup>`_ anyway.
 
-Create a new release by creating a Git tag with the new version number.
+Create a new release by creating a Git tag in the `main repository <https://github.com/christianspecht/scm-backup>`_ with the new version number.
 
 The CI build will recognize this and automatically use this version number to create a new `GitHub release <https://github.com/christianspecht/scm-backup/releases>`_.
 
@@ -34,10 +34,14 @@ The CI build will recognize this and automatically use this version number to cr
 3. Release the docs
 -------------------
 
-- Set the `version number <http://www.sphinx-doc.org/en/stable/config.html#confval-version>`_ in the `Sphinx configuration file <https://github.com/christianspecht/scm-backup-docs/blob/master/source/conf.py>`_ ``conf.py`` to the new version number, but in short ``X.Y`` format.
+- Set the `version <http://www.sphinx-doc.org/en/stable/config.html#confval-version>`_ and `release <http://www.sphinx-doc.org/en/stable/config.html#confval-release>`_ numbers in the `Sphinx configuration file <https://github.com/christianspecht/scm-backup-docs/blob/master/source/conf.py>`_ ``conf.py`` to the new version number.
+
+    Set ``version`` to the short ``X.Y`` format, e.g. ``1.0``.
+
+    Set ``release`` to the full three-digit format determined in step 1, e.g. ``1.0.0``.
 
     Apparently Read the Docs uses this number at least in the automatically created PDF.
 
-- Create the same Git tag with the same version number in the documentation repository as well.
+- Create the same "version number" Git tag *(like in the main repository)* in the documentation repository as well.
 
     This will create a version of the documentation for this release, making use of `Read the Docs' versioning capabilities <http://docs.readthedocs.io/en/latest/versions.html>`_.
