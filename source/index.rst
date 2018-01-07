@@ -42,10 +42,3 @@ Then, it uses the respective SCM (e.g. `Git <https://git-scm.com/>`_ and/or `Mer
     :google-site-verification: xINH0T8eqZ6O0ATn_IZY3DiPhcXK_c_RaVeLUSqPYro
     :yandex-verification: 77dc911a2b7fc8d3
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
