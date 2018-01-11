@@ -36,6 +36,7 @@ Then, it uses the respective SCM (e.g. `Git <https://git-scm.com/>`_ and/or `Mer
    install
    config
    contribute
+   legal
    
    
 .. meta::
