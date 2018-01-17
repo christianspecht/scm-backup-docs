@@ -28,6 +28,7 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
    intro
    install
    config
+   restore
    contribute
    legal
    
