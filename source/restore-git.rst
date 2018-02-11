@@ -4,7 +4,9 @@ Restoring Git repositories
 How a bare repository looks like
 --------------------------------
 
-It contains a few folders (``objects``, ``refs``...) and some files.
+It contains a few folders (``objects``, ``refs``...) and some files:
+
+.. image:: restore-git-folder.png
 
 
 How to restore
