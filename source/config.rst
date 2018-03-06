@@ -17,7 +17,7 @@ The folder must already exist, SCM Backup won't create it.
 
 Example::
 
-    localFolder: "c:\\scm-backup"
+    localFolder: 'c:\scm-backup'
 
     
 waitSecondsOnError
@@ -43,7 +43,7 @@ Example::
 
     scms:
       - name: git
-        path: "c:\\git\\git.exe"
+        path: 'c:\git\git.exe'
 
     
 .. _config-sources:
