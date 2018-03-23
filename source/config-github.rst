@@ -3,6 +3,14 @@ GitHub
 
 Configuration settings for backing up repositories from GitHub.
 
+.. warning::
+
+    **Known limitations:**
+    
+    - `Issues are not backed up <https://github.com/christianspecht/scm-backup/issues/12>`_
+    - Backing up wikis crashes when `the wiki is enabled, but doesn't exist <https://github.com/christianspecht/scm-backup/issues/13>`_
+
+
 Sources
 -------
 
