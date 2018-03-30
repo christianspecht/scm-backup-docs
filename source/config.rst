@@ -100,4 +100,26 @@ See the respective sub-page for detailed documentation per hoster:
    :maxdepth: 2
    
    config-github
-   
+
+
+ignoreRepos
++++++++++++
+
+Optional: For each source, you can specify a list of repositories you do **not** want to be backed up.
+
+Example::
+
+    sources:
+
+      - title: some_title
+        hoster: github
+        type: user
+        name: your_user_name
+        ignoreRepos:
+            - repo1
+            - Some-Other-Repo
+
+.. note::
+
+    - The repository names are case-sensitive!
+    - For hosters where the repositories are "sub-items" of the users (like GitHub), you just need to specify the repository name, not the user name (i.e. ``repo`` instead of ``user/repo``).
