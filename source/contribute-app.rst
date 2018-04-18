@@ -5,4 +5,5 @@ Contribute to the application
    :maxdepth: 2
    
    contribute-app-tests
+   contribute-app-hoster
 
