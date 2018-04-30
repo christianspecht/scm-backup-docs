@@ -27,7 +27,7 @@ Without authentication, SCM Backup can only backup your public repositories.
 
 In this case, it shows a warning:
 
-.. image:: config-github-auth-warning.png
+.. image:: config-auth-warning.png
 
 To backup your private repositories as well, you need to authenticate:
 
