@@ -1,0 +1,61 @@
+Bitbucket
+=========
+
+Configuration settings for backing up repositories from Bitbucket.
+
+.. warning::
+
+    **Known limitations:**
+    
+    - Issues are not backed up
+
+
+Sources
+-------
+
+For the basics, please read the :ref:`config-sources` section first.
+
+For Bitbucket, the ``hoster`` entry in the config file needs to look like this::
+
+    hoster: bitbucket
+
+
+Authentication
+--------------
+
+Without authentication, SCM Backup can only backup your public repositories.
+
+In this case, it shows a warning:
+
+.. image:: config-auth-warning.png
+
+To backup your private repositories as well, you need to authenticate:
+
+- To backup a user's repositories, you need to authenticate with that user.
+- To backup an organization's repositories, you need to authenticate with a user who has sufficient permissions to that organization's repositories.
+
+Create an `app password <https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html>`_ for SCM Backup for that user:
+
+#. In the user's settings on Bitbucket, go to the **App passwords** area (``https://bitbucket.org/account/user/YOUR-USERNAME/app-passwords``) and create a new app password. Give it at least the following permissions:
+    
+    .. image:: config-bitbucket-pw-permissions.png
+    
+    - Account: Read
+    - Repositories: Read
+    - Issues: Read
+    - Wikis: Read and write
+    
+#. Put the username and the app password into the ``authName`` and ``password`` properties of the source in the config file.
+
+    Example::
+        
+        sources:
+
+          - title: some_title
+            hoster: bitbucket
+            type: org
+            name: your_org_name
+            authName: your_user_name
+            password: your_app_password
+            
+    This will backup the repositories of the organization ``your_org_name``, but authenticate with the user ``your_user_name`` and the app password.

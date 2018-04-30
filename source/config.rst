@@ -100,6 +100,7 @@ See the respective sub-page for detailed documentation per hoster:
    :maxdepth: 2
    
    config-github
+   config-bitbucket
 
 
 ignoreRepos
