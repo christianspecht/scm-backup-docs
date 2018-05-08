@@ -32,7 +32,7 @@ In this case, it shows a warning:
 To backup your private repositories as well, you need to authenticate:
 
 - To backup a user's repositories, you need to authenticate with that user.
-- To backup an organization's repositories, you need to authenticate with a user who has sufficient permissions to that organization's repositories.
+- To backup a team's repositories, you need to authenticate with a user who has sufficient permissions to that team's repositories.
 
 Create an `app password <https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html>`_ for SCM Backup for that user:
 
@@ -54,8 +54,8 @@ Create an `app password <https://confluence.atlassian.com/bitbucket/app-password
           - title: some_title
             hoster: bitbucket
             type: org
-            name: your_org_name
+            name: your_team_name
             authName: your_user_name
             password: your_app_password
             
-    This will backup the repositories of the organization ``your_org_name``, but authenticate with the user ``your_user_name`` and the app password.
+    This will backup the repositories of the team ``your_team_name``, but authenticate with the user ``your_user_name`` and the app password.
