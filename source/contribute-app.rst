@@ -6,4 +6,5 @@ Contribute to the application
    
    contribute-app-tests
    contribute-app-hoster
+   contribute-app-scm
 
