@@ -64,3 +64,22 @@ Backup
 - Must inherit from ``BackupBase``, which implements ``IBackup`` and creates the actual backups by cloning the repositories.
 - Tests: Create a new class in ``ScmBackup.Tests.Integration.Hosters`` which inherits from ``IBackupTests``
 
+
+
+More about the tests
+--------------------
+
+The base classes for the tests (``IConfigSourceValidatorTests``, ``IHosterApiTests``, ``IBackupTests``) contain all the tests and a few properties, some of them abstract or virtual.
+
+The child classes just need to inherit from the respective base class and fill the properties *(for repo URLs, commit IDs etc.)*.
+
+So the same tests are executed for each ``IConfigSourceValidator``, ``IHosterApi`` and ``IBackup`` implementation (please see also :doc:`contribute-app-tests`).
+
+
+.. note::
+
+    For special cases, which only apply to a certain implementation, you can create additional tests directly in the child class instead of the base classes.
+    
+    One example for this is the Github API. There's `a special quirk <https://github.com/christianspecht/scm-backup/issues/13>`_ which only occurs in the Github API.
+    
+    Because of this, we have a special integration test for this, directly in the `GithubApiTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/GithubApiTests.cs>`_ class, so it's only executed there, and not for all ``IHosterApi`` implementations.
