@@ -89,3 +89,10 @@ So the same tests are executed for each ``IConfigSourceValidator``, ``IHosterApi
     One example for this is the Github API. There's `a special quirk <https://github.com/christianspecht/scm-backup/issues/13>`_ which only occurs in the Github API.
     
     Because of this, we have a special integration test for this, directly in the `GithubApiTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/GithubApiTests.cs>`_ class, so it's only executed there, and not for all ``IHosterApi`` implementations.
+
+
+Documentation
+-------------
+
+Add the hoster to the lists on `the website's front page <https://github.com/christianspecht/scm-backup-site/blob/master/index.md>`_, and on the `Introduction <https://github.com/christianspecht/scm-backup-docs/blob/master/source/intro.rst>`_ page in this documentation.
+

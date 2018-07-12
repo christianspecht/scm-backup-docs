@@ -3,6 +3,11 @@ Introduction
 
 SCM Backup is a tool which makes offline backups of your cloud hosted source code repositories, by cloning them.
 
+At the moment, the following hosters are supported:
+
+- `GitHub <https://github.com/>`_
+- `Bitbucket <https://bitbucket.org/>`_
+
 
 How does it work?
 -----------------
