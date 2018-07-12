@@ -64,6 +64,12 @@ Backup
 - Must inherit from ``BackupBase``, which implements ``IBackup`` and creates the actual backups by cloning the repositories.
 - Tests: Create a new class in ``ScmBackup.Tests.Integration.Hosters`` which inherits from ``IBackupTests``
 
+.. note::
+
+    When a hoster supports multiple SCMs, you want to test backups with all of them, so you should create a separate test class for each SCM.
+    
+    An example for this is Bitbucket, which supports Git **and** Mercurial, so there are `BitbucketBackupGitTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/BitbucketBackupGitTests.cs>`_ and `BitbucketBackupMercurialTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/BitbucketBackupMercurialTests.cs>`_.
+
 
 
 More about the tests
