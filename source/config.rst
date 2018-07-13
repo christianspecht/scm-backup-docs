@@ -3,6 +3,16 @@ Configuration
 
 SCM Backup is configured in `YAML <https://en.wikipedia.org/wiki/YAML>`_, by editing the config file ``settings.yml``.
 
+.. note::
+
+    SCM Backup automatically makes a backup of its own configuration.
+    
+    On each run, the following files are copied to the :ref:`backup folder <config-folder>`, into a subfolder named ``_config``:
+    
+    - ``settings.yml``
+    - The logger's config file
+    
+
 General Options
 ---------------
 
