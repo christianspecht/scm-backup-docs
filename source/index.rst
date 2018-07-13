@@ -25,6 +25,7 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
    install
    config
    restore
+   logging
    contribute
    legal
    
