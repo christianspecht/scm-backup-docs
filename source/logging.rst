@@ -21,3 +21,13 @@ NLog is configured via NLog's regular `NLog.config <https://github.com/christian
 
 For example, you can change the minimal log level to ``Debug`` (default: ``Info``), to log additional information.
 
+
+Log files
+---------
+
+The log files are in a subfolder named ``logs`` in SCM Backup's application folder.
+
+On each application start, a new log file (``scm-backup.log``) is generated.
+
+Old files are available in the ``archive`` subfolder.
+
