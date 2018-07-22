@@ -10,7 +10,7 @@ SCM Backup is configured in `YAML <https://en.wikipedia.org/wiki/YAML>`_, by edi
     On each run, the following files are copied to the :ref:`backup folder <config-folder>`, into a subfolder named ``_config``:
     
     - ``settings.yml``
-    - The :doc:`logger's <logging>` config file
+    - The :doc:`logger's <output-logging>` config file
     
 
 General Options

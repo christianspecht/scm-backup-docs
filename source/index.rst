@@ -24,8 +24,8 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
    intro
    install
    config
+   output
    restore
-   logging
    contribute
    legal
    
