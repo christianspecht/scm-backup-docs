@@ -5,4 +5,5 @@ Getting SCM Backup's output
    :maxdepth: 2
    
    output-logging
+   output-email
    

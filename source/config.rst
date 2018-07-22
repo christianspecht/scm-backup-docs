@@ -56,6 +56,30 @@ Example::
         path: 'c:\git\git.exe'
 
     
+.. _config-email:
+
+email
++++++
+
+Settings for :doc:`sending log information via email <output-email>`.
+
+By default, the whole section is commented out via ``#``. To enable it, remove the comments so it looks like this::
+
+    email:
+      from: from@example.com
+      to: to@example.com
+      server: smtp.example.com
+      port: 0
+      useSsl: false
+      userName: testuser
+      password: not-the-real-password
+
+Fill all settings with the proper values for your server.
+
+SCM Backup will try sending emails when an un-commented ``email`` section exists in the configuration.
+
+
+
 .. _config-sources:
 
 Sources
