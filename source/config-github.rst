@@ -8,7 +8,6 @@ Configuration settings for backing up repositories from GitHub.
     **Known limitations:**
     
     - `Issues are not backed up <https://github.com/christianspecht/scm-backup/issues/12>`_
-    - Backing up wikis crashes when `the wiki is enabled, but doesn't exist <https://github.com/christianspecht/scm-backup/issues/13>`_
 
 
 Sources
@@ -28,7 +27,7 @@ Without authentication, SCM Backup can only backup your public repositories.
 
 In this case, it shows a warning:
 
-.. image:: config-github-auth-warning.png
+.. image:: config-auth-warning.png
 
 To backup your private repositories as well, you need to authenticate:
 
@@ -37,7 +36,7 @@ To backup your private repositories as well, you need to authenticate:
 
 Create a `personal access token <https://github.com/blog/1509-personal-api-tokens>`_ for SCM Backup for that user:
 
-#. In the user's settings on GitHub, `create a new token <https://github.com/settings/tokens/new>`_. Give it at least the ``repo:status`` scope.
+#. In the user's settings on GitHub, go to `Developer settings ⇒ Personal access tokens <https://github.com/settings/tokens>`_ and `create a new token <https://github.com/settings/tokens/new>`_. Give it at least the ``repo:status`` scope.
     
     This scope allows SCM Backup to get a list of that user's repositories via the `GitHub API <https://developer.github.com/v3/>`_ (`read more about scopes <https://developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps/>`_).
     

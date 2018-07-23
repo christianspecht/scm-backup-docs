@@ -21,3 +21,4 @@ For more details, please see the sub-page for the respective SCM:
    :maxdepth: 1
    
    restore-git
+   restore-hg

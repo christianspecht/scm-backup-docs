@@ -3,6 +3,16 @@ Configuration
 
 SCM Backup is configured in `YAML <https://en.wikipedia.org/wiki/YAML>`_, by editing the config file ``settings.yml``.
 
+.. note::
+
+    SCM Backup automatically makes a backup of its own configuration.
+    
+    On each run, the following files are copied to the :ref:`backup folder <config-folder>`, into a subfolder named ``_config``:
+    
+    - ``settings.yml``
+    - The :doc:`logger's <output-logging>` config file
+    
+
 General Options
 ---------------
 
@@ -46,6 +56,30 @@ Example::
         path: 'c:\git\git.exe'
 
     
+.. _config-email:
+
+email
++++++
+
+Settings for :doc:`sending log information via email <output-email>`.
+
+By default, the whole section is commented out via ``#``. To enable it, remove the comments so it looks like this::
+
+    email:
+      from: from@example.com
+      to: to@example.com
+      server: smtp.example.com
+      port: 0
+      useSsl: false
+      userName: testuser
+      password: not-the-real-password
+
+Fill all settings with the proper values for your server.
+
+SCM Backup will try sending emails when an un-commented ``email`` section exists in the configuration.
+
+
+
 .. _config-sources:
 
 Sources
@@ -100,4 +134,27 @@ See the respective sub-page for detailed documentation per hoster:
    :maxdepth: 2
    
    config-github
-   
+   config-bitbucket
+
+
+ignoreRepos
++++++++++++
+
+Optional: For each source, you can specify a list of repositories you do **not** want to be backed up.
+
+Example::
+
+    sources:
+
+      - title: some_title
+        hoster: github
+        type: user
+        name: your_user_name
+        ignoreRepos:
+            - repo1
+            - Some-Other-Repo
+
+.. note::
+
+    - The repository names are case-sensitive!
+    - For hosters where the repositories are "sub-items" of the users (like GitHub), you just need to specify the repository name, not the user name (i.e. ``repo`` instead of ``user/repo``).
