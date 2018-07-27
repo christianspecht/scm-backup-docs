@@ -85,7 +85,7 @@ SCM Backup will try sending emails when an un-commented ``email`` section exists
 Sources
 -------
 
-SCM Backup will be able to backup from multiple source code hosters, and multiple accounts per hoster.
+SCM Backup is able to backup from multiple source code hosters, and multiple accounts per hoster.
 
 For example, your GitHub user may be a member of an `organization <https://help.github.com/articles/about-organizations/>`_, and you may want to backup all repositories of your user, **and** all repositories of that organization.
 
