@@ -1,6 +1,8 @@
 Installation
 ============
 
+.. _install-requirements:
+
 System Requirements
 -------------------
 
