@@ -5,3 +5,5 @@
 [![Build status](http://readthedocs.org/projects/scm-backup-docs/badge/?version=latest)](http://readthedocs.org/projects/scm-backup-docs/)
 
 Built with [Sphinx](http://www.sphinx-doc.org/), hosted on [Read the Docs](https://readthedocs.org/).
+
+Visit [docs.scm-backup.org](http://docs.scm-backup.org/)
