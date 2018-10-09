@@ -16,3 +16,13 @@ SCM Backup's integration tests read the users, password etc. from a file named `
 
 You need to create your own by copying/renaming `environment-variables.ps1.sample <https://github.com/christianspecht/scm-backup/blob/master/environment-variables.ps1.sample>`_, and changing the values.
 
+
+xUnit.Net Cheat Sheet
+---------------------
+
+Running a single test
++++++++++++++++++++++
+
+Edit ``run-all-tests.ps1``, look for the **INTEGRATION TESTS** section and add the ``--filter`` parameter to the ``dotnet test`` call, like this::
+
+    --filter "FullyQualifiedName=ScmBackup.Tests.Integration.Hosters.BitbucketBackupMercurialTests.MakesBackup"
