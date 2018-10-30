@@ -6,14 +6,14 @@ Installation
 System Requirements
 -------------------
 
-.NET Core 2.0
-+++++++++++++
+.NET Core
++++++++++
 
 SCM Backup is written in `.NET Core <https://dotnet.github.io/>`_, the cross-platform version of .NET.
 
 The available releases are `framework-dependent deployments <https://docs.microsoft.com/en-us/dotnet/core/deploying/>`_, which means that the same download should work on any Windows, Linux and MacOS machine, as long as .NET Core is installed on it.
 
-If it's not on your machine, you can get it from the `official download page <https://www.microsoft.com/net/download>`_. You need at least **version 2.0** of the .NET Core **runtime**.
+If it's not on your machine, you can get it from the `official download page <https://www.microsoft.com/net/download>`_. You need at least **version 2.1** of the .NET Core **runtime**.
 
 .. note::
 
