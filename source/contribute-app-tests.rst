@@ -10,11 +10,14 @@ So there are integration tests for each hoster which do these things as well, so
 
 We created test users especially for these tests (for example: `user <https://github.com/scm-backup-testuser/>`_ and `organization <https://github.com/scm-backup-testorg>`_ used for GitHub integration tests ), but of course we can't publish their passwords.
 
-So in order to run any of these integration tests, you need to setup your *own* test users and test repositories.
+So in order to run any of these integration tests, you need to setup your *own* test users and private test repositories.
 
-SCM Backup's integration tests read the users, password etc. from a file named ``environment-variables.ps1`` in the main project directory, which is not in the repository.
+SCM Backup's integration tests read the users, passwords etc. from a file named ``environment-variables.ps1`` in the main project directory, which is not in the repository.
 
 You need to create your own by copying/renaming `environment-variables.ps1.sample <https://github.com/christianspecht/scm-backup/blob/master/environment-variables.ps1.sample>`_, and changing the values.
+
+The public repositories are hardcoded in the tests, the tests just authenticate with the user/password from the environment variables.
+
 
 
 xUnit.Net Cheat Sheet
