@@ -43,7 +43,7 @@ Create an `app password <https://confluence.atlassian.com/bitbucket/app-password
     - Account: Read
     - Repositories: Read
     - Issues: Read
-    - Wikis: Read and write
+    - Wikis: Read and write *(SCM Backup only needs to read, but there's no separate "just read" permission)*
     
 #. Put the username and the app password into the ``authName`` and ``password`` properties of the source in the config file.
 
