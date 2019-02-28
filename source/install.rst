@@ -52,3 +52,15 @@ The actual application is in the ``ScmBackup.dll`` library. You can execute it w
     dotnet ScmBackup.dll
 
 For Windows, there's a batch file named ``ScmBackup.bat`` which does exactly that.
+
+
+Windows Task Scheduler
+++++++++++++++++++++++
+
+To run SCM Backup via Windows Task Scheduler, you need to specify the path to the batch file **and** the directory (in "Start in") in the "Edit Action" screen:
+
+.. image:: install-scheduler.png
+
+Omitting the directory `can cause problems <https://github.com/christianspecht/scm-backup/issues/30>`_.
+
+
