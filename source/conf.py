@@ -57,7 +57,7 @@ copyright = '2016-{}, {}'.format(datetime.datetime.now().year, author)
 # built documents.
 #
 # See the docs:
-# http://docs.scm-backup.org/en/latest/contribute-release/#release-the-docs
+# https://docs.scm-backup.org/en/latest/contribute-release/#release-the-docs
 #
 # The short X.Y version.
 version = '1.2'

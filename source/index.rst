@@ -11,8 +11,8 @@ Welcome to SCM Backup's documentation!
 SCM Backup is a tool which makes offline backups of your cloud hosted source code repositories, by cloning them.
 
 - `Source code <https://github.com/christianspecht/scm-backup/>`_
-- `Website <http://scm-backup.org/>`_
-- `Download latest release <http://scm-backup.org/downloads/>`_
+- `Website <https://scm-backup.org/>`_
+- `Download latest release <https://scm-backup.org/downloads/>`_
 
 It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's supposed to run on Windows, Linux and MacOS.
 
