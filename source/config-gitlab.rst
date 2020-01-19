@@ -71,9 +71,9 @@ To determine if there's a wiki which needs to be backed up, SCM Backup has to do
 
 When you have lots of repos, this has two effects concerning `GitLab's rate limits <https://docs.gitlab.com/ee/user/gitlab_com/index.html#gitlabcom-specific-rate-limits>`_:
 
-- SCM pauses after each wiki API call to avoid hitting the limit of 10 requests per second per IP address
+- SCM Backup pauses after each wiki API call to avoid hitting the limit of 10 requests per second per IP address
 
-    ⇒ the whole API calling will take more time, the more repos you have
+    ⇒ the more repos you have, the more time will the whole API calling take
 
 - There's another limit of 600 API calls per minute altogether.
 
