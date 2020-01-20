@@ -13,7 +13,7 @@ SCM Backup is written in `.NET Core <https://dotnet.github.io/>`_, the cross-pla
 
 The available releases are `framework-dependent deployments <https://docs.microsoft.com/en-us/dotnet/core/deploying/>`_, which means that the same download should work on any Windows, Linux and MacOS machine, as long as .NET Core is installed on it.
 
-If it's not on your machine, you can get it from the `official download page <https://www.microsoft.com/net/download>`_. You need at least **version 2.1** of the .NET Core **runtime**.
+If it's not on your machine, you can get it from the `official download page <https://www.microsoft.com/net/download>`_. You need at least **version 3.1** of the .NET Core **runtime**.
 
 .. note::
 
@@ -47,17 +47,14 @@ How to run
     
     :doc:`Read the guide </config>` for more information.
 
-The actual application is in the ``ScmBackup.dll`` library. You can execute it with the ``dotnet`` command::
+Run the actual application by executing ``ScmBackup.exe`` 
 
-    dotnet ScmBackup.dll
-
-For Windows, there's a batch file named ``ScmBackup.bat`` which does exactly that.
 
 
 Windows Task Scheduler
 ++++++++++++++++++++++
 
-To run SCM Backup via Windows Task Scheduler, you need to specify the path to the batch file **and** the directory (in "Start in") in the "Edit Action" screen:
+To run SCM Backup via Windows Task Scheduler, you need to specify the path to the exe **and** the directory (in "Start in") in the "Edit Action" screen:
 
 .. image:: install-scheduler.png
 
