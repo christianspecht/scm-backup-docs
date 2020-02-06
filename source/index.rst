@@ -28,6 +28,7 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
    restore
    contribute
    legal
+   faq
    bitbucket-backup-users
    
    

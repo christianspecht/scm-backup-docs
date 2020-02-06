@@ -8,6 +8,8 @@ Configuration settings for backing up repositories from GitLab.
     **Known limitations:**
     
     - Issues are not backed up
+    - SCM Backup supports GitLab.com (the SaaS option, see `Pricing <https://about.gitlab.com/pricing/>`_) only, the self-managed options are **not** supported!
+       ⇒ see :ref:`why-no-local-backup` 
 
 
 Sources

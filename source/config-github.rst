@@ -8,6 +8,8 @@ Configuration settings for backing up repositories from GitHub.
     **Known limitations:**
     
     - `Issues are not backed up <https://github.com/christianspecht/scm-backup/issues/12>`_
+    - SCM Backup supports GitHub's `cloud hosting plans <https://github.com/pricing>`_ only, the `self-hosting option of GitHub Enterprise <https://help.github.com/en/github/getting-started-with-github/githubs-products#github-enterprise>`_ is **not** supported!
+       ⇒ see :ref:`why-no-local-backup` 
 
 
 Sources

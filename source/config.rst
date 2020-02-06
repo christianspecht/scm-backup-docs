@@ -132,10 +132,9 @@ See the respective sub-page for detailed documentation per hoster:
 
 .. toctree::
    :maxdepth: 2
-   
-   config-bitbucket
-   config-github
-   config-gitlab
+   :glob:
+
+   config-*
 
 
 ignoreRepos

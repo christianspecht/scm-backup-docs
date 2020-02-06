@@ -9,11 +9,8 @@ Configuration settings for backing up repositories from Bitbucket.
     
     - Issues are not backed up
     
-.. note::
-
-    SCM Backup supports `Bitbucket Cloud (bitbucket.org) <https://bitbucket.org>`_ only.
-    
-    `Bitbucket Data Center / Bitbucket Server (the self-hosted options) <https://bitbucket.org/product/enterprise>`_ are not supported (and probably never will), `here's an explanation why <https://github.com/christianspecht/scm-backup/issues/25#issuecomment-434444008>`_.
+    - SCM Backup supports Bitbucket Cloud (see `Hosting Options <https://bitbucket.org/product/guides/getting-started/overview#bitbucket-software-hosting-options>`_) only, the self-hosted options are **not** supported!
+       ⇒ see :ref:`why-no-local-backup` 
 
 
 Sources
