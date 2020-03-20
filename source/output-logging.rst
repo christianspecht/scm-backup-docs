@@ -15,7 +15,7 @@ To keep it simple, SCM Backup only has `four log levels <https://github.com/chri
 
 The `ConsoleLogger <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/Loggers/ConsoleLogger.cs>`_ outputs all levels except ``Debug``.
 
-The `NLogLogger <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/NLogLogger.cs>`_ maps SCM Backup's log levels to a subset of NLog's log levels.
+The `NLogLogger <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/Loggers/NLogLogger.cs>`_ maps SCM Backup's log levels to a subset of NLog's log levels.
 
 NLog is configured via NLog's regular `NLog.config <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/NLog.config>`_ file, so all possible `NLog configuration settings <https://github.com/nlog/NLog/wiki/Configuration-file>`_ apply.
 
