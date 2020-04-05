@@ -6,7 +6,7 @@ FAQ
 Why doesn't SCM Backup support backing up local installations of [hoster X]?
 ----------------------------------------------------------------------------
 
-SCM Backup only supports backing up from the hosters' cloud offerings. Most hosters also support some kind of "install on your own server" version of their product, **but SCM Backup doesn'tsupport any of them, and this is very unlikely to change.**
+SCM Backup only supports backing up from the hosters' cloud offerings. Most hosters also support some kind of "install on your own server" version of their product, **but SCM Backup doesn't support any of them, and this is very unlikely to change.**
 
 The main reason is: Supporting local installations would make automated testing much more complicated.
 
