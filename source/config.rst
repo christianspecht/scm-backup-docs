@@ -126,7 +126,44 @@ Each source must have at least those four properties:
     The name of the user/organization you want to backup.
 
 
-There are more possible options (for authentication, for example), but these can vary depending on the source code hoster.
+Authentication
+--------------
+
+Without authentication, SCM Backup can only backup your public repositories.
+
+In this case, it shows a warning:
+
+.. image:: config-auth-warning.png
+
+To backup your private repositories as well, you need to authenticate by setting two more properties for the source:
+
+``authName``
+
+    Name of the user which is used for authentication.
+    
+``password``
+
+    The password/token/whatever (this varies wildly depending on the source code hoster)
+
+    
+If you don't want to save your passwords directly in a config file, SCM Backup is able to get them from environment variables.
+
+Example::
+
+    password: '%some_variable%'
+
+If an environment variable named ``some_variable`` exists, the string ``%some_variable%`` will be replaced by the value of that variable.
+
+This works for parts of the password as well::
+
+    password: 'foo%some_variable%bar'
+
+.. note::
+    
+    If you use environment variables, you **must** quote the string as shown in the examples above.
+    
+    ``password: %some_variable%`` will not work because in YAML, strings containing ``%`` must always be quoted.
+                
 
 See the respective sub-page for detailed documentation per hoster:
 
