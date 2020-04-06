@@ -42,6 +42,6 @@ The CI build will recognize this and automatically use this version number to cr
 
     Apparently Read the Docs uses this number at least in the automatically created PDF.
 
-- Create the same "version number" Git tag *(like in the main repository)* in the documentation repository as well.
+- Create a new Git tag *(like in the main repository)* in the documentation repository as well, **but in the short X.Y format**.
 
     This will create a version of the documentation for this release, making use of `Read the Docs' versioning capabilities <http://docs.readthedocs.io/en/latest/versions.html>`_.
