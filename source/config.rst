@@ -145,6 +145,13 @@ To backup your private repositories as well, you need to authenticate by setting
 
     The password/token/whatever (this varies wildly depending on the source code hoster)
 
+.. note::
+
+    If your password contains at least `one of the special characters listed here <https://stackoverflow.com/a/22235064/6884>`_, you should enclose it in quotes.
+    
+    E.g. ``password: 'foo?'`` instead of ``password: foo?``
+    
+    
     
 If you don't want to save your passwords directly in a config file, SCM Backup is able to get them from environment variables.
 
