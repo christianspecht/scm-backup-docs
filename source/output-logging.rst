@@ -19,7 +19,11 @@ The `NLogLogger <https://github.com/christianspecht/scm-backup/blob/master/src/S
 
 NLog is configured via NLog's regular `NLog.config <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/NLog.config>`_ file, so all possible `NLog configuration settings <https://github.com/nlog/NLog/wiki/Configuration-file>`_ apply.
 
-For example, you can change the minimal log level to ``Debug`` (default: ``Info``), to log additional information.
+For example, you can change the minimal log level to ``Debug`` (default: ``Info``), to log additional information::
+
+    <rules>
+      <logger name="*" minlevel="Debug" writeTo="f" />    
+    </rules>
 
 
 Log files
