@@ -125,6 +125,41 @@ Each source must have at least those four properties:
 
     The name of the user/organization you want to backup.
 
+.. warning:: With these settings, SCM Backup will backup public repositories only. For private repositories, additional properties must be set ⇒ see :ref:`config-auth`
+
+See the respective sub-page for detailed documentation per hoster:
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   config-*
+
+
+ignoreRepos
++++++++++++
+
+Optional: For each source, you can specify a list of repositories you do **not** want to be backed up.
+
+Example::
+
+    sources:
+
+      - title: some_title
+        hoster: github
+        type: user
+        name: your_user_name
+        ignoreRepos:
+            - repo1
+            - Some-Other-Repo
+
+.. note::
+
+    - The repository names are case-sensitive!
+    - For hosters where the repositories are "sub-items" of the users (like GitHub), you just need to specify the repository name, not the user name (i.e. ``repo`` instead of ``user/repo``).
+
+
+.. _config-auth:
 
 Authentication
 --------------
@@ -172,33 +207,3 @@ This works for parts of the password as well::
     ``password: %some_variable%`` will not work because in YAML, strings containing ``%`` must always be quoted.
                 
 
-See the respective sub-page for detailed documentation per hoster:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-
-   config-*
-
-
-ignoreRepos
-+++++++++++
-
-Optional: For each source, you can specify a list of repositories you do **not** want to be backed up.
-
-Example::
-
-    sources:
-
-      - title: some_title
-        hoster: github
-        type: user
-        name: your_user_name
-        ignoreRepos:
-            - repo1
-            - Some-Other-Repo
-
-.. note::
-
-    - The repository names are case-sensitive!
-    - For hosters where the repositories are "sub-items" of the users (like GitHub), you just need to specify the repository name, not the user name (i.e. ``repo`` instead of ``user/repo``).
