@@ -11,7 +11,13 @@ SCM Backup uses `Semantic Versioning <https://semver.org/>`_.
 The new version number **must** be in "three-digit" ``MAJOR.MINOR.PATCH`` format, for example ``1.0.0`` !!
 
 
-2. Release the application
+2. Prepare a blog post
+----------------------
+
+`Here are the posts <https://github.com/christianspecht/scm-backup-site/tree/master/_posts>`_, write a new one with the list of changes.
+
+
+3. Release the application
 --------------------------
 
 Each push to ``master`` creates a new CI build on `AppVeyor <https://ci.appveyor.com/project/ChristianSpecht/scm-backup>`_ anyway.
@@ -31,7 +37,13 @@ The CI build will recognize this and automatically use this version number to cr
         .. image:: contribute-git-push-tags.png
 
 
-3. Release the docs
+Edit the release on GitHub and paste into the description:
+
+- the list of changes from the blog post
+- the following Markdown to show an image with the download count: ``![GitHub downloads](https://img.shields.io/github/downloads/christianspecht/scm-backup/TAG/total)``
+        
+        
+4. Release the docs
 -------------------
 
 - Set the `version <http://www.sphinx-doc.org/en/stable/config.html#confval-version>`_ and `release <http://www.sphinx-doc.org/en/stable/config.html#confval-release>`_ numbers in the `Sphinx configuration file <https://github.com/christianspecht/scm-backup-docs/blob/master/source/conf.py>`_ ``conf.py`` to the new version number.
@@ -45,3 +57,9 @@ The CI build will recognize this and automatically use this version number to cr
 - Create a new Git tag *(like in the main repository)* in the documentation repository as well, **but in the short X.Y format**.
 
     This will create a version of the documentation for this release, making use of `Read the Docs' versioning capabilities <http://docs.readthedocs.io/en/latest/versions.html>`_.
+
+
+5. Publish the blog post
+------------------------
+
+Period.
