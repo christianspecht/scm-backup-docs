@@ -26,6 +26,7 @@ It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's suppo
    config
    output
    restore
+   troubleshooting
    contribute
    legal
    faq
