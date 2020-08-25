@@ -21,4 +21,15 @@ And not all hosters even offer a free-as-in-beer version of their local product 
     If you are using a local installation of a hoster supported by SCM Backup *(or any other Git/Mercurial/whatever server that can be installed on a machine you control)*, you probably don't need a tool like SCM Backup!
 
     You (or at least someone in your organization) should have enough access to the machine, so you can directly backup the folder from that machine which contains all the repositories.
-    
+
+
+.. _why-mercurial:
+
+Why do the docs mention Mercurial, but none of the supported hosters supports Mercurial repos?
+----------------------------------------------------------------------------------------------
+
+Bitbucket **did** support Mercurial, until they `dropped support for it <https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket>`_ and deleted all repos in July 2020.
+
+Until then, SCM Backup was able to backup Git **and** Mercurial repos from Bitbucket.
+
+Support for Mercurial (and all references to it in the documentation) will not be completely removed from SCM Backup, so we'll be able to support backing up from Mercurial hosters in the future.
