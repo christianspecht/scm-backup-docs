@@ -25,9 +25,13 @@ The folder (on the machine where SCM Backup runs) where all the backups will be 
 
 The folder must already exist, SCM Backup won't create it.
 
-Example::
+Windows example::
 
     localFolder: 'c:\scm-backup'
+
+MacOS example::
+
+    localFolder: '/Users/yourusername/scm-backup/'
 
     
 waitSecondsOnError
