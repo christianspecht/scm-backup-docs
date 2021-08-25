@@ -61,3 +61,13 @@ To run SCM Backup via Windows Task Scheduler, you need to specify the path to th
 Omitting the directory `can cause problems <https://github.com/christianspecht/scm-backup/issues/30>`_.
 
 
+Docker
+++++++
+
+It's possible to run SCM Backup via Docker, but I *(SCM Backup maintainer)* don't have much Docker experience.
+
+Here are some example Dockerfiles from people who managed to get it to run. I'm not able to provide support for this - use at your own risk!
+
+- `Dockerfile by norbdev <https://github.com/christianspecht/scm-backup/issues/51>`_
+- `Dockerfile by juris <https://github.com/christianspecht/scm-backup/issues/49#issuecomment-830032953>`_
+- `Pre-made Docker image by Juro <https://hub.docker.com/r/juroapp/scm-backup>`_
