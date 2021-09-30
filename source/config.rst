@@ -211,3 +211,29 @@ This works for parts of the password as well::
     ``password: %some_variable%`` will not work because in YAML, strings containing ``%`` must always be quoted.
                 
 
+
+
+Special Options
+---------------
+
+Additional configuration options, available in this form::
+
+	options:
+		CATEGORY:
+			KEY : VALUE
+
+
+removeDeletedRepos
+++++++++++++++++++
+
+::
+
+	options:
+		backup:
+			removeDeletedRepos : false
+			
+Default value: ``false``
+
+SCM Backup will detect repositories which exist in the local backup, but not at the hoster...so at some point, they were deleted from the hoster.
+
+When ``removeDeletedRepos`` is set to true, SCM Backup will delete those repositories from the local backup folder.
