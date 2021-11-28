@@ -163,6 +163,26 @@ Example::
     - For hosters where the repositories are "sub-items" of the users (like GitHub), you just need to specify the repository name, not the user name (i.e. ``repo`` instead of ``user/repo``).
 
 
+includeRepos
+++++++++++++
+
+Optional. The opposite of ``ignoreRepos`` *(see above)*: if a list of repos is specified in ``includeRepos``, **only these repos will be backed up, the rest will be ignored**.
+
+Example::
+
+    sources:
+
+      - title: some_title
+        hoster: github
+        type: user
+        name: your_user_name
+        includeRepos:
+            - repo1
+            - Some-Other-Repo
+
+.. note:: When the same repo is specified in both ``ignoreRepos`` and ``includeRepos``, ignoring "wins" and the repo will **not** be backed up.
+
+
 .. _config-auth:
 
 Authentication
