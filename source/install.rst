@@ -70,4 +70,11 @@ Here are some example Dockerfiles from people who managed to get it to run. I'm 
 
 - `Dockerfile by norbdev <https://github.com/christianspecht/scm-backup/issues/51>`_
 - `Dockerfile by juris <https://github.com/christianspecht/scm-backup/issues/49#issuecomment-830032953>`_
-- `Pre-made Docker image by Juro <https://hub.docker.com/r/juroapp/scm-backup>`_
+- `Pre-made Docker image by Juro <https://hub.docker.com/r/juroapp/scm-backup>`_ [#prebuilt]_
+
+
+
+
+.. rubric:: Footnotes
+
+.. [#prebuilt] This is a pre-built container, but the build script that was used to make this image is not published. Before using it, you should validate that it contains nothing unexpected *(or if you're not sure, use one of the Dockerfiles instead)*. For more information, read `this <https://github.com/christianspecht/scm-backup/issues/67>`_.
