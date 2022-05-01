@@ -22,12 +22,14 @@ For Bitbucket, the ``hoster`` entry in the config file needs to look like this::
 
     hoster: bitbucket
 
-SCM Backup will always backup a Bitbucket `Workspace <https://confluence.atlassian.com/bitbucket/workspaces-966686552.html>`_.
+SCM Backup will always backup a Bitbucket `Workspace <https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/>`_.
 
-Bitbucket repository URLs look like this: ``https://bitbucket.org/WORKSPACEID/REPO/``...so the URL part directly behind ``https://bitbucket.org`` is the workspace ID.
+| Bitbucket repository URLs look like this: ``https://bitbucket.org/WORKSPACEID/REPO/``...so the URL part directly behind ``https://bitbucket.org`` is the workspace ID.
+| *(The distinction between "users" and "organizations" - which most other hosters have, and which Bitbucket also had before they introduced workspaces - doesn't really exist anymore)*
 
 - To backup the repos of any workspace, the ``name`` entry in the config needs to be set to the workspace ID
-- The ``type`` property of the source doesn't matter anymore *(because for what SCM Backup does, there's no difference between users and workspaces)*, so SCM Backup will accept either ``user`` or ``org``
+- If the workspace is the user's "personal" workspace *(workspace name is equal to username)*, set the ``type`` in the config to ``user``. For any other workspace, set the ``type`` to ``org``. [#type]_
+
 
 
 
@@ -74,3 +76,9 @@ Create an `app password <https://confluence.atlassian.com/bitbucket/app-password
             
     This will backup the repositories of the workspace ``your_workspace``, but authenticate with the user ``your_user_name`` and the app password.
     
+
+.. rubric:: Footnotes
+
+.. [#type] For what SCM Backup does, there's no difference between users and workspaces. The actual backup will work with both ``types``.
+   
+   However, not all validations are done for both types, and if you set the wrong ``type``, you may see misleading warning messages (`example <https://github.com/christianspecht/scm-backup/issues/68>`_).
