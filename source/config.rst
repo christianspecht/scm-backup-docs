@@ -257,3 +257,35 @@ Default value: ``false``
 SCM Backup will detect repositories which exist in the local backup, but not at the hoster...so at some point, they were deleted from the hoster.
 
 When ``removeDeletedRepos`` is set to true, SCM Backup will delete those repositories from the local backup folder.
+
+
+logRepoFinished
+++++++++++++++++++
+
+::
+
+	options:
+		backup:
+			logRepoFinished: false
+			
+Default value: ``false``
+
+While SCM Backup is running, it outputs a log message for each repo that is backed up::
+
+	Backing up source: some_source
+	Git: https://github.com/some_user/some_repo.git 
+	Git: https://github.com/some_user/another_repo.git 
+	...
+
+These messages are generated **before** SCM Backup tries to backup the repo.
+
+To make it more clear when the backup of each repo starts and finishes, you can set ``logRepoFinished`` to true, which outputs a second log message for each repo when its backup is finished::
+
+
+	Backing up source: some_source
+	Git: https://github.com/some_user/some_repo.git 
+	     Finished
+	Git: https://github.com/some_user/another_repo.git 
+	     Finished
+	...
+
