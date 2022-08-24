@@ -13,7 +13,12 @@ SCM Backup is written in `.NET Core <https://dotnet.github.io/>`_, the cross-pla
 
 The available releases are `framework-dependent deployments <https://docs.microsoft.com/en-us/dotnet/core/deploying/>`_, which means that the same download should work on any Windows, Linux and MacOS machine, as long as .NET Core is installed on it.
 
-If it's not on your machine, you can get it from the `official download page <https://dotnet.microsoft.com/en-us/download/dotnet/3.1>`_. The exact version you need is **version 3.1.x** of the .NET Core **runtime**.
+If it's not on your machine, you can get it from the `official download page <https://dotnet.microsoft.com/en-us/download/dotnet/3.1>`_:
+
+- Install **any version 3.1.x** of the .NET Core **runtime** *(not the SDK)*
+- SCM Backup is a console app, so the .NET Runtime is sufficient
+
+  *(the ASP.NET Core Runtime or .NET Desktop Runtime will also work, but contain more than SCM Backup needs)*
 
 .. note::
 
