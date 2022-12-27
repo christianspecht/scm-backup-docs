@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+    - name: ONLY DOCUMENTATION ISSUES HERE!!
+      url: https://github.com/christianspecht/scm-backup/issues
+      about: This is the repository for the SCM Backup *documentation*. Please create only issues for the documentation here. For the actual SCM Backup application, please create an issue in the main repository's issue tracker, https://github.com/christianspecht/scm-backup/issues
