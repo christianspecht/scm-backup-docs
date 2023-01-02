@@ -86,5 +86,5 @@ So `all possible options <https://docs.microsoft.com/de-de/dotnet/framework/conf
 
 Apparently `this is not possible in .NET Core <https://github.com/dotnet/corefx/issues/12537>`_ and maybe ``SmtpClient`` `is kind of deprecated anyway <https://github.com/dotnet/docs/issues/1876>`_, so SCM Backup is using `MailKit <https://github.com/jstedfast/MailKit>`_ instead, which `doesn't read values from the config and never will <https://github.com/jstedfast/MailKit/issues/630#issuecomment-357670414>`_.
 
-So SCM Backup has to know about every possible config value, and time will tell whether `those available now <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/ConfigEmail.cs>`_ will work for everyone.
+So SCM Backup has to know about every possible config value, and time will tell whether `those available now <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/Configuration/ConfigEmail.cs>`_ will work for everyone.
 
