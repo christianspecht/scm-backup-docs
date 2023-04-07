@@ -140,6 +140,8 @@ See the respective sub-page for detailed documentation per hoster:
    config-*
 
 
+.. _config-ignorerepos:
+
 ignoreRepos
 +++++++++++
 
@@ -259,6 +261,8 @@ SCM Backup will detect repositories which exist in the local backup, but not at 
 When ``removeDeletedRepos`` is set to true, SCM Backup will delete those repositories from the local backup folder.
 
 
+.. _config-logrepofinished:
+
 logRepoFinished
 ++++++++++++++++++
 
@@ -277,9 +281,9 @@ While SCM Backup is running, it outputs a log message for each repo that is back
 	Git: https://github.com/some_user/another_repo.git 
 	...
 
-These messages are generated **before** SCM Backup tries to backup the repo.
+These messages are generated **before** SCM Backup tries to backup the repo, but that's not obvious for the user just by looking at the messages.
 
-To make it more clear when the backup of each repo starts and finishes, you can set ``logRepoFinished`` to true, which outputs a second log message for each repo when its backup is finished::
+To make it more clear when the backup of each repo starts and finishes *(e.g. when an error happens, to be 100% sure which repo caused it)*, you can set ``logRepoFinished`` to true, which outputs a second log message for each repo when its backup is finished::
 
 
 	Backing up source: some_source
