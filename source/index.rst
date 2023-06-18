@@ -14,7 +14,7 @@ SCM Backup is a tool which makes offline backups of your cloud hosted source cod
 - `Website <https://scm-backup.org/>`_
 - `Download latest release <https://scm-backup.org/downloads/>`_
 
-It's written in `.NET Core <https://dotnet.github.io/>`_, which means it's supposed to run on Windows, Linux and MacOS.
+It's written in `.NET Core <https://dotnet.github.io/>`_, which means it runs on Windows, Linux and MacOS.
 
 
 .. toctree::
