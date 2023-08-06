@@ -22,7 +22,9 @@ If it's not on your machine, you can get it from the `official download page <ht
 
 .. note::
 
-    So far, SCM Backup has been written and tested on Windows only. Technically, it should run on Linux and MacOS as well, but this has not been tested yet.
+    So far, SCM Backup has been written on Windows only. Technically, it should run on Linux and MacOS as well.
+    
+    CI (including tests) is also `running on Linux <https://github.com/christianspecht/scm-backup/actions/workflows/ci-linux.yml>`_, and we *know* that there are users on Linux and MacOS.
 
 
 Source control software

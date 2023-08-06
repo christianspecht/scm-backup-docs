@@ -9,7 +9,7 @@ The source code `is here on GitHub <https://github.com/christianspecht/scm-backu
 Headlines
 ---------
 
-To make sure that the Read the docs Sphinx theme renders correctly, it's important that `the headline styling is consistent across the whole documentation <https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html#how-the-table-of-contents-builds>`_.
+To make sure that the Read the docs Sphinx theme renders correctly, it's important that `the headline styling is consistent across the whole documentation <https://sphinx-rtd-theme.readthedocs.io/en/latest/configuring.html#how-the-table-of-contents-displays>`_.
 
 SCM Backup's documentation uses these stylings:
 
