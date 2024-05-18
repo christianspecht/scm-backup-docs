@@ -10,6 +10,7 @@ Configuration settings for backing up repositories from GitLab.
     - Issues are not backed up
     - SCM Backup supports GitLab.com (the SaaS option, see `Pricing <https://about.gitlab.com/pricing/>`_) only, the self-managed options are **not** supported!
        ⇒ see :ref:`why-no-local-backup` 
+    - if you backup private GitLab repos, you need to create a new access token once a year (because they expire after 365 days, see :ref:`gl-auth` below)
 
 
 Sources
@@ -21,6 +22,8 @@ For GitLab, the ``hoster`` entry in the config file needs to look like this::
 
     hoster: gitlab
 
+
+.. _gl-auth:
 
 Authentication
 --------------
@@ -36,12 +39,19 @@ To backup your private repositories as well, you need to authenticate:
 - To backup a user's repositories, you need to authenticate with that user.
 - To backup a group's repositories, you need to authenticate with a user who has sufficient permissions to that group's repositories.
 
-Create a `personal access token <https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#creating-a-personal-access-token>`_ for SCM Backup for that user:
+Create a `personal access token <https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#create-a-personal-access-token>`_ for SCM Backup for that user:
 
-#. In the user's settings on GitLab, go to `Settings ⇒ Access tokens <https://gitlab.com/profile/personal_access_tokens>`_ and create a new token with the following `scopes <https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#limiting-scopes-of-a-personal-access-token>`_:
+#. Ensure that you're logged into GitLab with the correct user, then `click this link to go to the "Personal Access Tokens" page <https://gitlab.com/-/user_settings/personal_access_tokens?name=SCM+Backup&scopes=read_api,read_repository>`__.
 
-    - ``api``
-    - ``read_repository``
+    Click on "Add new token" ⇒ the token's name and the correct scopes should be pre-filled.
+    
+    .. warning::
+    
+        | Note that **the token has an expiration date, and the maximum you can set is 365 days.**
+        | (this was `changed in GitLab 16.0 <https://gitlab.com/gitlab-org/gitlab/-/issues/392855>`__, previously it was possible to have tokens that never expire)
+        
+        The default value is much less than that *(at the time of writing this, it was a month)*, so be sure to change the default value.
+
     
 #. Put the username and the token into the ``authName`` and ``password`` properties of the source in the config file.
 
