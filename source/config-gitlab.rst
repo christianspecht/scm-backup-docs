@@ -76,7 +76,7 @@ Unfortunately, the "main" API call doesn't return whether a project has a wiki.
 
 To determine if there's a wiki which needs to be backed up, SCM Backup has to do the following **for each project that the API call returns**:
 
-#. check if the "wiki" feature is activated for the current project (Repo settings ⇒ Features, default value for new repos: yes)
+#. check if the "wiki" feature is activated for the current project *(this is the only information about the wiki that the Project API returns)*
 #. if yes, make a separate call to the `Wikis API <https://docs.gitlab.com/ee/api/wikis.html#list-wiki-pages>`_ to check if this wiki has at least one page
 
 .. note:: This means one additional API call per project with enabled wiki...even if the wiki doesn't have a single page.
@@ -91,4 +91,6 @@ When you have lots of repos, this has two effects concerning `GitLab's rate limi
 
     ⇒ you may hit that limit when you have hundreds of repos and a fast Internet connection.
 
-Both issues can be avoided by disabling the wiki feature in all projects that don't actually use the wiki.
+Both issues can be avoided by disabling the wiki feature in all projects that don't actually use the wiki:
+
+Your repository ⇒ **Settings** ⇒ **General** ⇒ expand **Visibility, project features, permissions** ⇒ scroll down to **Wiki** and disable it ⇒ scroll down and click **Save Changes**.
