@@ -9,16 +9,27 @@ System Requirements
 .NET Core
 +++++++++
 
-SCM Backup is written in `.NET Core <https://dotnet.github.io/>`_, the cross-platform version of .NET.
+SCM Backup is written in `.NET Core <https://dotnet.microsoft.com/en-us/>`_, the cross-platform version of .NET.
 
-The available releases are `framework-dependent deployments <https://docs.microsoft.com/en-us/dotnet/core/deploying/>`_, which means that the same download should work on any Windows, Linux and MacOS machine, as long as .NET Core is installed on it.
+The available releases are `framework-dependent deployments <https://docs.microsoft.com/en-us/dotnet/core/deploying/>`_, which means that the same download should work on any Windows, Linux and MacOS machine, as long as the correct .NET version is installed on it.
 
-If it's not on your machine, you can get it from the `official download page <https://dotnet.microsoft.com/en-us/download/dotnet/3.1>`_:
+If it's not on your machine, you can get it from the official download page:
 
-- Install **any version 3.1.x** of the .NET Core **runtime** *(not the SDK)*
+======================================  =================================================================================
+SCM Backup version range                .NET version (download link)
+======================================  =================================================================================
+>= 1.3                                  `.NET Core 3.1.x <https://dotnet.microsoft.com/en-us/download/dotnet/3.1>`_
+1.2.0 to 1.2.2                          `.NET Core 2.1.x <https://dotnet.microsoft.com/en-us/download/dotnet/2.1>`_
+1.0.0 to 1.1.1                          `.NET Core 2.0.x <https://dotnet.microsoft.com/en-us/download/dotnet/2.0>`_
+======================================  =================================================================================
+
+- You can see the version number of the latest SCM Backup release `here <https://github.com/christianspecht/scm-backup/releases/latest>`_
+- Pick any patch version of the appropriate .NET version from the download page
+- Install the **runtime** *(not the SDK)*
 - SCM Backup is a console app, so the .NET Runtime is sufficient
 
   *(the ASP.NET Core Runtime or .NET Desktop Runtime will also work, but contain more than SCM Backup needs)*
+
 
 .. note::
 
