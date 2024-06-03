@@ -18,7 +18,8 @@ If it's not on your machine, you can get it from the official download page:
 ======================================  =================================================================================
 SCM Backup version range                .NET version (download link)
 ======================================  =================================================================================
->= 1.3                                  `.NET Core 3.1.x <https://dotnet.microsoft.com/en-us/download/dotnet/3.1>`_
+>= 1.8.0                                `.NET 8.0.x <https://dotnet.microsoft.com/en-us/download/dotnet/8.0>`_
+1.3 to 1.7.1                            `.NET Core 3.1.x <https://dotnet.microsoft.com/en-us/download/dotnet/3.1>`_
 1.2.0 to 1.2.2                          `.NET Core 2.1.x <https://dotnet.microsoft.com/en-us/download/dotnet/2.1>`_
 1.0.0 to 1.1.1                          `.NET Core 2.0.x <https://dotnet.microsoft.com/en-us/download/dotnet/2.0>`_
 ======================================  =================================================================================
