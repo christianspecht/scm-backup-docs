@@ -6,10 +6,10 @@ Installation
 System Requirements
 -------------------
 
-.NET Core
-+++++++++
+.NET
+++++
 
-SCM Backup is written in `.NET Core <https://dotnet.microsoft.com/en-us/>`_, the cross-platform version of .NET.
+SCM Backup is written in `.NET <https://dotnet.microsoft.com/en-us/>`_.
 
 The available releases are `framework-dependent deployments <https://docs.microsoft.com/en-us/dotnet/core/deploying/>`_, which means that the same download should work on any Windows, Linux and MacOS machine, as long as the correct .NET version is installed on it.
 
