@@ -35,8 +35,8 @@ Things that almost all issues have in common:
 - **Always:** the hoster is Bitbucket
 - **Often:** Git fails with this error::
 
-	fatal: protocol error: unexpected 'Error running git: fork/exec /usr/bin/git-upload-pack: no such file or directory'
-	
+    fatal: protocol error: unexpected 'Error running git: fork/exec /usr/bin/git-upload-pack: no such file or directory'
+
 - **Often:** SCM Backup is executed on Windows
 - **Sometimes:** people tried to :ref:`ignore <config-ignorerepos>` the repo that caused the error, only to have the same error occur for another repo, and another...
 
@@ -52,10 +52,10 @@ Other things worth mentioning:
 
 #. Execute :ref:`the steps SCM Backup does directly in Git <trouble-gitusage>`, with the repo where the problem occured
 
-	.. note:: Until now, executing the commands in Git directly *did* work for all users who had the problem with SCM Backup. But still, it's interesting to know.
+    .. note:: Until now, executing the commands in Git directly *did* work for all users who had the problem with SCM Backup. But still, it's interesting to know.
 
 #. Try to :ref:`ignore <config-ignorerepos>` the repo.
 
-	This helped for some people...for others, the same problem occured with multiple other repos.
+    This helped for some people...for others, the same problem occured with multiple other repos.
 
 **I don't have a working solution for this problem yet, because I wasn't able to reproduce it myself.**

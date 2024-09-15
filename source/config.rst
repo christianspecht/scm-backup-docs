@@ -240,9 +240,9 @@ Special Options
 
 Additional configuration options, available in this form::
 
-	options:
-		CATEGORY:
-			KEY : VALUE
+    options:
+        CATEGORY:
+            KEY : VALUE
 
 
 removeDeletedRepos
@@ -250,10 +250,10 @@ removeDeletedRepos
 
 ::
 
-	options:
-		backup:
-			removeDeletedRepos : false
-			
+    options:
+        backup:
+            removeDeletedRepos : false
+            
 Default value: ``false``
 
 SCM Backup will detect repositories which exist in the local backup, but not at the hoster...so at some point, they were deleted from the hoster.
@@ -268,28 +268,28 @@ logRepoFinished
 
 ::
 
-	options:
-		backup:
-			logRepoFinished: false
-			
+    options:
+        backup:
+            logRepoFinished: false
+            
 Default value: ``false``
 
 While SCM Backup is running, it outputs a log message for each repo that is backed up::
 
-	Backing up source: some_source
-	Git: https://github.com/some_user/some_repo.git 
-	Git: https://github.com/some_user/another_repo.git 
-	...
+    Backing up source: some_source
+    Git: https://github.com/some_user/some_repo.git 
+    Git: https://github.com/some_user/another_repo.git 
+    ...
 
 These messages are generated **before** SCM Backup tries to backup the repo, but that's not obvious for the user just by looking at the messages.
 
 To make it more clear when the backup of each repo starts and finishes *(e.g. when an error happens, to be 100% sure which repo caused it)*, you can set ``logRepoFinished`` to true, which outputs a second log message for each repo when its backup is finished::
 
 
-	Backing up source: some_source
-	Git: https://github.com/some_user/some_repo.git 
-	     Finished
-	Git: https://github.com/some_user/another_repo.git 
-	     Finished
-	...
+    Backing up source: some_source
+    Git: https://github.com/some_user/some_repo.git 
+         Finished
+    Git: https://github.com/some_user/another_repo.git 
+         Finished
+    ...
 
