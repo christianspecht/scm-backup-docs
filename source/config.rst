@@ -293,3 +293,24 @@ To make it more clear when the backup of each repo starts and finishes *(e.g. wh
          Finished
     ...
 
+addTimestampedSubfolder
++++++++++++++++++++++++
+
+::
+
+    options:
+        backup:
+            addTimestampedSubfolder: false
+            timestampFormat: yyyy-MM-dd_HHmm
+
+Default value: ``false``
+
+By default, SCM Backup will backup everything into the folder defined in ``localFolder`` (also in the config) and overwrite it on subsequent runs.
+
+When ``addTimestampedSubfolder`` is set to ``true``, it will instead create a new subfolder in ``localFolder``. The subfolder's name is the current date/time, formatted according to ``timestampFormat``.
+
+.. warning::
+
+    This will create a complete new backup on each run, i.e. each time it will make completely new clones of each repository!
+    
+    *(in contrast to the default behavior, which only makes a complete clone one single time, and then just pulls the newest changes)*
