@@ -24,6 +24,19 @@ import sphinx_rtd_theme
 
 
 
+# Add 'Edit on Github' link instead of 'View page source'
+# Source: https://github.com/readthedocs/sphinx_rtd_theme/issues/465#issuecomment-521272830
+html_context = {
+  "display_github": True, 
+  "github_user": "christianspecht",
+  "github_repo": "scm-backup-docs",
+  "github_version": "master",
+  "conf_py_path": "/source/", # needs leading and trailing slashes!
+  # "source_suffix": source_suffix,
+}
+
+
+
 # -- RTD settings (#7) ----------------------------------------------------
 
 # Define the canonical URL if you are using a custom domain on Read the Docs
@@ -115,7 +128,9 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    'flyout_display': 'attached'
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
