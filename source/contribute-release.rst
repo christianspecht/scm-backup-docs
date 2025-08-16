@@ -39,8 +39,8 @@ The CI build will recognize this and automatically use this version number to cr
 
 Edit the release on GitHub and paste into the description:
 
-- the list of changes from the blog post
 - the following Markdown to show an image with the download count: ``![GitHub downloads](https://img.shields.io/github/downloads/christianspecht/scm-backup/TAG/total)``
+- the list of changes from the blog post
         
         
 4. Release the docs
