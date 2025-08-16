@@ -314,3 +314,26 @@ When ``addTimestampedSubfolder`` is set to ``true``, it will instead create a ne
     This will create a complete new backup on each run, i.e. each time it will make completely new clones of each repository!
     
     *(in contrast to the default behavior, which only makes a complete clone one single time, and then just pulls the newest changes)*
+
+
+
+s3BucketName
+++++++++++++
+
+::
+
+    options:
+        backup:
+            s3BucketName:
+
+Default value: empty
+
+If ``s3BucketName`` is not empty, SCM Backup will upload the whole backup directory to `Amazon S3 <https://en.wikipedia.org/wiki/Amazon_S3>`__ after the backup is finished.
+
+.. note::
+
+    The config value contains just the name of the bucket, no authentication.
+    
+    In order for the upload to work, SCM Backup needs to be run in a context `where writes to this bucket are allowed <https://github.com/christianspecht/scm-backup/pull/82#issuecomment-3161841046>`__.
+
+
