@@ -44,18 +44,38 @@ In this case, it shows a warning:
 
 To backup your private repositories as well, you need to authenticate with a user who has sufficient permissions to the workspace's repositories.
 
-Create an `app password <https://confluence.atlassian.com/bitbucket/app-passwords-828781300.html>`_ for SCM Backup for that user:
+.. warning:: 
 
-#. In the user's settings on Bitbucket, go to the **App passwords** area (``https://bitbucket.org/account/user/YOUR-USERNAME/app-passwords``) and create a new app password. Give it at least the following permissions:
+    In the past, Bitbucket used app passwords for this. App passwords are now replaced by API tokens and all existing app passwords will be disabled June 9, 2026 (`1 <https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation>`__, `2 <https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-enters-phase-2-of-app-password-deprecation>`__).
     
-    .. image:: config-bitbucket-pw-permissions.png
+    If you're currently using app passwords to authenticate SCM Backup, you must replace them by API tokens before June 9, 2026.
+
+
+Create an `API token <https://support.atlassian.com/bitbucket-cloud/docs/api-tokens/>`_ for SCM Backup for that user:
+
+#. Login with your Atlassian ID, go to the `API tokens page <https://id.atlassian.com/manage-profile/security/api-tokens>`__ and `follow these steps <https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/>`__ to create a new API token with scopes.
+
+    (important: there are two options to create a token either with or without scopes, and you need one **with** scopes!)
+
+
+#.  Select Bitbucket as the app, and give the token at least the following permissions:
+
+    - ``read:repository:bitbucket``
+    - ``read:wiki:bitbucket``
     
-    - Account: Read
-    - Repositories: Read
-    - Issues: Read
-    - Wikis: Read and write *(SCM Backup only needs to read, but there's no separate "just read" permission)*
     
-#. Put the username and the app password into the ``authName`` and ``password`` properties of the source in the config file.
+#. Put your Bitbucket email address and the API token into the ``authName`` and ``password`` properties of the source in the config file.
+
+
+    .. warning::
+
+        **TODO: this won't work, because after creating the token, Bitbucket shows this:**
+
+                To authenticate with Bitbucket Cloud using an API token:
+
+                You will need the API token and your Bitbucket email address for Bitbucket APIs.
+                You will need the API token and your Bitbucket user name for Git commands.
+
 
     .. note::
     
