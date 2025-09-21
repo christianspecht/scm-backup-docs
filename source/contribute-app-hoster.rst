@@ -68,7 +68,7 @@ Backup
 
     When a hoster supports multiple SCMs, you want to test backups with all of them, so you should create a separate test class for each SCM.
     
-    An example for this is Bitbucket, which supports Git **and** Mercurial, so there are `BitbucketBackupGitTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/BitbucketBackupGitTests.cs>`_ and `BitbucketBackupMercurialTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/BitbucketBackupMercurialTests.cs>`_.
+    An example for this was Bitbucket, which supported Git **and** Mercurial (until they dropped Mercurial in 2020). So today there are `BitbucketBackupGitTests <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup.Tests.Integration/Hosters/BitbucketBackupGitTests.cs>`_...but in the past, there also were `BitbucketBackupMercurialTests <https://github.com/christianspecht/scm-backup/blob/d5ccb7b8d3d449cbd1346fd0595c1c4d3336a828/src/ScmBackup.Tests.Integration/Hosters/BitbucketBackupMercurialTests.cs>`_.
 
 
 
