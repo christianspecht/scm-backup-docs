@@ -46,7 +46,7 @@ To backup your private repositories as well, you need to authenticate with a use
 
 .. warning:: 
 
-    In the past, Bitbucket used app passwords for this. App passwords are now replaced by API tokens and all existing app passwords will be disabled June 9, 2026 (`1 <https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation>`__, `2 <https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-enters-phase-2-of-app-password-deprecation>`__).
+    In the past, Bitbucket used app passwords for this. App passwords are now replaced by API tokens and all existing app passwords will be disabled June 9, 2026 (source: `1 <https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-transitions-to-api-tokens-enhancing-security-with-app-password-deprecation>`__, `2 <https://www.atlassian.com/blog/bitbucket/bitbucket-cloud-enters-phase-2-of-app-password-deprecation>`__).
     
     If you're currently using app passwords to authenticate SCM Backup, you must replace them by API tokens before June 9, 2026.
 
@@ -64,18 +64,7 @@ Create an `API token <https://support.atlassian.com/bitbucket-cloud/docs/api-tok
     - ``read:wiki:bitbucket``
     
     
-#. Put your Bitbucket email address and the API token into the ``authName`` and ``password`` properties of the source in the config file.
-
-
-    .. warning::
-
-        **TODO: this won't work, because after creating the token, Bitbucket shows this:**
-
-                To authenticate with Bitbucket Cloud using an API token:
-
-                You will need the API token and your Bitbucket email address for Bitbucket APIs.
-                You will need the API token and your Bitbucket user name for Git commands.
-
+#. Put your Bitbucket username, email address, and the API token into the ``authName``, ``apiAuthName`` and ``password`` properties of the source in the config file.
 
     .. note::
     
@@ -92,9 +81,13 @@ Create an `API token <https://support.atlassian.com/bitbucket-cloud/docs/api-tok
             type: org
             name: your_workspace
             authName: your_user_name
-            password: your_app_password
+            apiAuthName: your_bitbucket_email@example.com
+            password: your_api_token
             
-    This will backup the repositories of the workspace ``your_workspace``, but authenticate with the user ``your_user_name`` and the app password.
+    This will backup the repositories of the workspace ``your_workspace``, but authenticate with:
+
+    - the email address ``your_bitbucket_email@example.com`` and the API token *(for calling the Bitbucket API)*
+    - the user ``your_user_name`` and the API token *(for Git commands)*
     
 
 .. rubric:: Footnotes
