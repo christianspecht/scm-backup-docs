@@ -90,6 +90,7 @@ Here are some example Dockerfiles from people who managed to get it to run. I'm 
 - `Dockerfile by lessismore-sparkvision <https://github.com/christianspecht/scm-backup/blob/master/src/ScmBackup/Dockerfile>`_
     - bundled with SCM Backup >= 1.8.0
     - rudimentary documentation `here <https://github.com/christianspecht/scm-backup/pull/78#issuecomment-2160204165>`__, proper documentation will be added later
+    - `some PowerShell scripts with instructions <https://github.com/pbklink/scm-backup-linux-docker-scripts>`__ that assist with using this Dockerfile in Linux
 - `Dockerfile by norbdev <https://github.com/christianspecht/scm-backup/issues/51>`_
 - `Dockerfile by juris <https://github.com/christianspecht/scm-backup/issues/49#issuecomment-830032953>`_
 - `Pre-made Docker image by Juro <https://hub.docker.com/r/juroapp/scm-backup>`_ [#prebuilt]_
