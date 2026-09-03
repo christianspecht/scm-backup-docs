@@ -41,6 +41,8 @@ Create a `personal access token <https://github.com/blog/1509-personal-api-token
 #. In the user's settings on GitHub, go to `Developer settings ⇒ Personal access tokens <https://github.com/settings/tokens>`_ and `create a new token <https://github.com/settings/tokens/new>`_. Give it at least the ``repo`` scope.
     
     This scope allows SCM Backup to get a list of that user's repositories, including private ones, via the `GitHub API <https://developer.github.com/v3/>`_ (`read more about scopes <https://developer.github.com/apps/building-oauth-apps/scopes-for-oauth-apps/>`_).
+
+#. If you want to use the token to backup the repos of an organization which has enabled single-sign-on, you need to `authorize the token for SSO <https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-single-sign-on/authorizing-a-personal-access-token-for-use-with-single-sign-on>`__.
     
 #. Put the username and the token into the ``authName`` and ``password`` properties of the source in the config file.
 
